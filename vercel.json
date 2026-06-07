@@ -1,10 +1,12 @@
 {
   "version": 2,
-  
+  "functions": {
+    "api/index.mjs": { "runtime": "nodejs20.x" }
+  },
   "routes": [
-    { "src": "/assets/(.*)", "dest": "/dist/tanstack_start_app/assets/$1" },
-    { "src": "/favicon\\.ico", "dest": "/dist/tanstack_start_app/favicon.ico" },
-    { "src": "/(.*\\.(js|css|png|jpg|jpeg|svg|ico|webp|json|map))$", "dest": "/dist/tanstack_start_app/$1" },
-    { "src": "/(.*)", "dest": "/api/index.mjs" }
+    { "src": "/assets/(.*)", "dest": "/dist/client/assets/$1" },
+    { "src": "/favicon.ico", "dest": "/dist/client/favicon.ico" },
+    { "src": "/(.*\\.(js|css|png|jpg|jpeg|svg|ico|webp|json|map))$", "dest": "/dist/client/$1" },
+    { "src": "/(.*)", "dest": "/api" }
   ]
 }
