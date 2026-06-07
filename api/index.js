@@ -1,14 +1,17 @@
 export const config = { runtime: 'edge' };
 
-// This Edge function forwards all incoming requests to the built TanStack Start
-// server entry under `dist/server/server.js` which exposes a `fetch(request)` handler.
-// Vercel will run the build (`npm run build`) before deployment so `dist` should exist.
-
-import server from '../dist/server/server.js';
-
+// Dynamically import the built server at request time. This avoids bundling-time
+// failures on Vercel when `dist/` does not exist yet during the build phase.
 export default async function handler(request) {
-  // Forward the incoming Request to the server's fetch handler and return its Response.
   try {
+    const mod = await import('../dist/server/server.js');
+    const server = mod?.default ?? mod;
+    if (!server || typeof server.fetch !== 'function') {
+      console.error('Built server entry not found or invalid:', Object.keys(mod || {}));
+      return new Response('Server not available', { status: 500 });
+    }
+
+    // Call the server's fetch handler and return its Response directly.
     const response = await server.fetch(request, undefined, undefined);
     return response;
   } catch (err) {
