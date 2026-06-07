@@ -1,0 +1,93 @@
+﻿node_modules/@tanstack/query-core/build/legacy/_tsup-dts-rollup.d.ts(335,5): error TS18028: Private identifiers are only available when targeting ECMAScript 2015 and higher.
+node_modules/@tanstack/query-core/build/legacy/_tsup-dts-rollup.d.ts(692,5): error TS18028: Private identifiers are only available when targeting ECMAScript 2015 and higher.
+node_modules/@tanstack/query-core/build/legacy/_tsup-dts-rollup.d.ts(709,5): error TS18028: Private identifiers are only available when targeting ECMAScript 2015 and higher.
+node_modules/@tanstack/query-core/build/legacy/_tsup-dts-rollup.d.ts(794,5): error TS18028: Private identifiers are only available when targeting ECMAScript 2015 and higher.
+node_modules/@tanstack/query-core/build/legacy/_tsup-dts-rollup.d.ts(1114,5): error TS18028: Private identifiers are only available when targeting ECMAScript 2015 and higher.
+node_modules/@tanstack/query-core/build/legacy/_tsup-dts-rollup.d.ts(1178,5): error TS18028: Private identifiers are only available when targeting ECMAScript 2015 and higher.
+node_modules/@tanstack/query-core/build/legacy/_tsup-dts-rollup.d.ts(1209,5): error TS18028: Private identifiers are only available when targeting ECMAScript 2015 and higher.
+node_modules/@tanstack/query-core/build/legacy/_tsup-dts-rollup.d.ts(1255,5): error TS18028: Private identifiers are only available when targeting ECMAScript 2015 and higher.
+node_modules/@tanstack/query-core/build/legacy/_tsup-dts-rollup.d.ts(1286,5): error TS18028: Private identifiers are only available when targeting ECMAScript 2015 and higher.
+node_modules/@tanstack/query-core/build/legacy/_tsup-dts-rollup.d.ts(1424,5): error TS18028: Private identifiers are only available when targeting ECMAScript 2015 and higher.
+node_modules/@tanstack/query-core/build/legacy/_tsup-dts-rollup.d.ts(1930,5): error TS18028: Private identifiers are only available when targeting ECMAScript 2015 and higher.
+node_modules/@tanstack/query-core/build/legacy/_tsup-dts-rollup.d.ts(2128,5): error TS18028: Private identifiers are only available when targeting ECMAScript 2015 and higher.
+node_modules/@tanstack/react-router/dist/esm/ClientOnly.d.ts(1,21): error TS1259: Module '"C:/Users/USER/Desktop/Semedo/Coding Projects/Infinite EduSuite/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+node_modules/@tanstack/react-router/dist/esm/route.d.ts(2,21): error TS1259: Module '"C:/Users/USER/Desktop/Semedo/Coding Projects/Infinite EduSuite/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+node_modules/sonner/dist/index.d.ts(1,8): error TS1259: Module '"C:/Users/USER/Desktop/Semedo/Coding Projects/Infinite EduSuite/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+src/routes/_authenticated/portal.register-units.tsx(5,26): error TS2307: Cannot find module '@/integrations/supabase/client' or its corresponding type declarations.
+src/routes/_authenticated/portal.register-units.tsx(6,36): error TS2307: Cannot find module '@/components/student-portal/StudentPortalShell' or its corresponding type declarations.
+src/routes/_authenticated/portal.register-units.tsx(7,42): error TS2307: Cannot find module '@/core/auth/student-portal' or its corresponding type declarations.
+src/routes/_authenticated/portal.register-units.tsx(8,24): error TS2307: Cannot find module '@/components/ui/button' or its corresponding type declarations.
+src/routes/_authenticated/portal.register-units.tsx(9,26): error TS2307: Cannot find module '@/components/ui/checkbox' or its corresponding type declarations.
+src/routes/_authenticated/portal.register-units.tsx(10,23): error TS2307: Cannot find module '@/components/ui/input' or its corresponding type declarations.
+src/routes/_authenticated/portal.register-units.tsx(11,23): error TS2307: Cannot find module '@/components/ui/badge' or its corresponding type declarations.
+src/routes/_authenticated/portal.register-units.tsx(14,38): error TS2345: Argument of type '"/_authenticated/portal/register-units"' is not assignable to parameter of type 'never'.
+src/routes/_authenticated/portal.register-units.tsx(15,65): error TS2339: Property 'auth' does not exist on type 'never'.
+src/routes/_authenticated/portal.register-units.tsx(177,5): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(181,7): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(182,9): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(183,11): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(184,13): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(185,15): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(186,17): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(187,17): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(191,15): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(192,17): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(193,17): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(204,15): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(205,17): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(208,15): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(212,15): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(216,15): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(217,17): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(218,19): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(219,21): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(220,23): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(221,23): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(222,23): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(223,23): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(226,19): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(231,25): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(232,27): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(233,29): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(240,27): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(241,29): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(242,29): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(244,27): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(245,27): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(247,31): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(251,31): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(264,13): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(265,15): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(268,15): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(274,19): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(276,19): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(284,9): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(285,11): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(286,13): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(287,13): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(291,13): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(292,15): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(293,17): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(294,19): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(296,17): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(297,19): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(299,17): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(300,19): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(301,19): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(307,15): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(309,19): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(310,21): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(311,23): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(312,25): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(313,25): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(314,25): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(317,21): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(319,25): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(320,27): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(321,29): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(322,29): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(324,27): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(325,27): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(326,29): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(333,31): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
+src/routes/_authenticated/portal.register-units.tsx(342,19): error TS17004: Cannot use JSX unless the '--jsx' flag is provided.
