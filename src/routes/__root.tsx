@@ -88,7 +88,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient; auth
       { property: "og:description", content: "Enterprise college management and student portal for multi-branch institutions." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@InfiniteEduSuite" },
     ],
     links: [
       {
