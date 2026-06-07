@@ -1,12 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "api/index.mjs": {
-      "includeFiles": "dist/server/**",
-      "memory": 1024,
-      "maxDuration": 30
-    }
-  },
   "routes": [
     { "src": "/assets/(.*)", "dest": "/dist/client/assets/$1" },
     { "src": "/favicon.ico", "dest": "/dist/client/favicon.ico" },
