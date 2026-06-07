@@ -1,7 +1,10 @@
 import { Buffer } from 'node:buffer';
+import { createStartHandler, defaultStreamHandler } from '@tanstack/react-start/server';
+
+const startHandler = createStartHandler(defaultStreamHandler);
 
 // Node serverless (Vercel) handler — ESM. This adapts the Node `req,res`
-// into a WHATWG `Request`, calls the built server's `fetch`, and returns the Response.
+// into a WHATWG `Request`, calls the TanStack Start server handler, and returns the Response.
 
 export default async function handler(req, res) {
   try {
@@ -16,26 +19,14 @@ export default async function handler(req, res) {
     };
 
     const request = new Request(url, init);
+    const response = await startHandler(request);
 
-    const mod = await import('../dist/server/server.js');
-    const server = mod?.default ?? mod;
-    if (!server || typeof server.fetch !== 'function') {
-      console.error('Built server entry missing or invalid:', Object.keys(mod || {}));
-      res.statusCode = 500;
-      res.end('Server build not available');
-      return;
-    }
-
-    const response = await server.fetch(request, undefined, undefined);
-
-    // Set status and headers
     res.statusCode = response.status;
     response.headers.forEach((value, name) => {
-      // Vercel reserves some headers; set others directly
+      if (name.toLowerCase() === 'transfer-encoding') return;
       res.setHeader(name, value);
     });
 
-    // Send body
     const buf = await response.arrayBuffer();
     res.end(Buffer.from(buf));
   } catch (err) {
