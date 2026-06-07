@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "api/index.mjs", "use": "@vercel/node" }
-  ],
   "routes": [
     { "src": "/assets/(.*)", "dest": "/dist/client/assets/$1" },
     { "src": "/favicon.ico", "dest": "/dist/client/favicon.ico" },
