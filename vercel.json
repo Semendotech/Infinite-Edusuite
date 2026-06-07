@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "api/index.mjs": { "runtime": "nodejs20.x" }
-  },
   "routes": [
     { "src": "/assets/(.*)", "dest": "/dist/client/assets/$1" },
     { "src": "/favicon.ico", "dest": "/dist/client/favicon.ico" },
