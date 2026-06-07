@@ -1,17 +1,3 @@
 {
-  "version": 2,
-  "functions": {
-    "api/index.mjs": {
-      "includeFiles": "dist/server/**"
-    }
-  },
-  "routes": [
-    { "src": "/assets/(.*)", "dest": "/dist/client/assets/$1" },
-    { "src": "/favicon.ico", "dest": "/dist/client/favicon.ico" },
-    {
-      "src": "/(.*\\.(js|css|png|jpg|jpeg|svg|ico|webp|json|map))$",
-      "dest": "/dist/client/$1"
-    },
-    { "src": "/(.*)", "dest": "/api/index.mjs" }
-  ]
+  "version": 2
 }

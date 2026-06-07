@@ -8,7 +8,7 @@ export default defineConfig({
   ssr: { noExternal: true },
   plugins: [
     tanstackStart({
-      server: { entry: "server", platform: "node" },
+      server: { preset: "vercel" },
     }),
     react(),
     tsconfigPaths(),
