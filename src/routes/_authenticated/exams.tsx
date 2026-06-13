@@ -106,9 +106,26 @@ function ExamsPage() {
     }
   }
 
-  const statusColor = (status: string) => {
-    if (status === "completed") return "bg-green-100 text-green-800";
-    if (status === "cancelled") return "bg-red-100 text-red-800";
+  const getExamStatus = (examDate?: string | null, status?: string | null) => {
+    if (!examDate) {
+      if (!status) return "Unknown";
+      return `${status.charAt(0).toUpperCase()}${status.slice(1).toLowerCase()}`;
+    }
+
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const examDay = new Date(new Date(examDate).getFullYear(), new Date(examDate).getMonth(), new Date(examDate).getDate());
+
+    if (today.getTime() === examDay.getTime()) return "Ongoing";
+    return today < examDay ? "Scheduled" : "Closed";
+  };
+
+  const getStatusColor = (status: string) => {
+    if (status === "Closed") return "bg-slate-100 text-slate-800";
+    if (status === "Ongoing") return "bg-emerald-100 text-emerald-800";
+    if (status === "Scheduled") return "bg-blue-100 text-blue-800";
+    if (status.toLowerCase() === "completed") return "bg-green-100 text-green-800";
+    if (status.toLowerCase() === "cancelled") return "bg-red-100 text-red-800";
     return "bg-blue-100 text-blue-800";
   };
 
@@ -163,9 +180,14 @@ function ExamsPage() {
                         </td>
                         <td className="px-4 py-3 text-muted-foreground">{e.venue || "—"}</td>
                         <td className="px-4 py-3">
-                          <Badge className={statusColor(e.status)}>
-                            {e.status.charAt(0).toUpperCase() + e.status.slice(1)}
-                          </Badge>
+                          {(() => {
+                            const examStatus = getExamStatus(e.exam_date, e.status);
+                            return (
+                              <Badge className={getStatusColor(examStatus)}>
+                                {examStatus}
+                              </Badge>
+                            );
+                          })()}
                         </td>
                       </tr>
                     ))}

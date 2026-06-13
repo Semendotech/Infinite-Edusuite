@@ -4,6 +4,7 @@ import { z } from "zod";
 import { GraduationCap, Loader2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { waitForAuthSession } from "@/core/auth/wait-for-session";
+import { ensureActiveStudentOrStaff } from "@/core/auth/student-access";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -106,8 +107,13 @@ function LoginPage() {
           toast.error(parsed.error.issues[0].message);
           return;
         }
-        const { error } = await supabase.auth.signInWithPassword(parsed.data);
+        const { data, error } = await supabase.auth.signInWithPassword(parsed.data);
         if (error) throw error;
+        const userId = data.user?.id ?? data.session?.user?.id;
+        if (!userId) {
+          throw new Error('Unable to validate your login. Please try again.');
+        }
+        await ensureActiveStudentOrStaff(userId);
         await waitForAuthSession();
         toast.success("Welcome back");
         await router.invalidate();
